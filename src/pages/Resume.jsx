@@ -11,7 +11,7 @@ const Resume = () => {
         <li>CSS</li>
         <li>JavaScript</li>
         <li>React</li>
-        {/* Add other proficiencies here */}
+        <li>More coming soon</li>
       </ul>
     </section>
   );

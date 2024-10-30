@@ -1,29 +1,15 @@
 import React from 'react';
 
-const projectStyles = {
-  backgroundColor: '#004080',
-  padding: '1rem',
-  borderRadius: '8px',
-  textAlign: 'center',
-};
+const Project = ({ title, image, repoLink }) => {
+  const imageStyles = {
+    width: '50%', // Reduce width to 50% of its original size
+    height: 'auto', // Maintain aspect ratio
+  };
 
-const imageStyles = {
-  width: '100%',
-  height: 'auto',
-  borderRadius: '8px',
-};
-
-const titleStyles = {
-  fontSize: '1.1rem',
-  margin: '0.5rem 0',
-};
-
-const Project = ({ title, image, appLink, repoLink }) => {
   return (
-    <div style={projectStyles}>
-      <img src={image} alt={title} style={imageStyles} />
-      <h3 style={titleStyles}>{title}</h3>
-      <a href={appLink} target="_blank" rel="noopener noreferrer">Live App</a> | 
+    <div style={{ textAlign: 'center' }}>
+      <img src={image} alt={`${title} screenshot`} style={imageStyles} />
+      <h3>{title}</h3>
       <a href={repoLink} target="_blank" rel="noopener noreferrer">GitHub Repo</a>
     </div>
   );

@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './pages/About';
@@ -11,41 +10,55 @@ const appStyles = {
   fontFamily: 'Arial, sans-serif',
   backgroundColor: '#333',
   color: 'white',
-  backgroundImage: 'url("/path-to-your-background-image.jpg")',
   backgroundSize: 'cover',
   backgroundAttachment: 'fixed',
   backgroundPosition: 'center',
-  height: '100vh', // Exact viewport height
+  width: '100vw',
+  minHeight: '100vh',
   display: 'flex',
   flexDirection: 'column',
-  overflowX: 'hidden', // Prevents any horizontal overflow
+  overflowX: 'hidden',
+  scrollBehavior: 'smooth',
 };
 
 const mainStyles = {
-  flex: 1, // Expands to take remaining space between header and footer
+  flex: 1,
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  width: '100%', // Ensures it doesn’t overflow horizontally
-  overflowY: 'auto', // Enables scrolling within the main content if needed
+  width: '100%',
+  paddingTop: '60px', // Adds space for the collapsed header
+};
+
+const sectionStyles = {
+  minHeight: '100vh',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  width: '100%',
+  padding: '1rem',
 };
 
 function App() {
   return (
-    <Router>
-      <div style={appStyles}>
-        <Header />
-        <main style={mainStyles}>
-          <Routes>
-            <Route path="/" element={<About />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/resume" element={<Resume />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <div style={appStyles}>
+      <Header />
+      <main style={mainStyles}>
+        <section id="about" style={sectionStyles}>
+          <About />
+        </section>
+        <section id="portfolio" style={sectionStyles}>
+          <Portfolio />
+        </section>
+        <section id="contact" style={sectionStyles}>
+          <Contact />
+        </section>
+        <section id="resume" style={sectionStyles}>
+          <Resume />
+        </section>
+      </main>
+      <Footer />
+    </div>
   );
 }
 

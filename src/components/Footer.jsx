@@ -18,9 +18,9 @@ const linkStyles = {
 const Footer = () => {
   return (
     <footer style={footerStyles}>
-      <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" style={linkStyles}>GitHub</a>
-      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" style={linkStyles}>LinkedIn</a>
-      <a href="https://stackoverflow.com/users/youruserID" target="_blank" rel="noopener noreferrer" style={linkStyles}>Stack Overflow</a>
+      <a href="https://github.com/J0263" target="_blank" rel="noopener noreferrer" style={linkStyles}>GitHub</a>
+      <a href="https://linkedin.com/in/jxrge" target="_blank" rel="noopener noreferrer" style={linkStyles}>LinkedIn</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={linkStyles}>Stack Overflow</a>
     </footer>
   );
 };
