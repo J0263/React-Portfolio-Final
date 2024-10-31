@@ -78,7 +78,7 @@ const Contact = () => {
 
         <textarea
           name="message"
-          placeholder="Message"
+          placeholder="Send Jorge a Message"
           value={formData.message}
           onChange={handleChange}
           style={inputStyles}

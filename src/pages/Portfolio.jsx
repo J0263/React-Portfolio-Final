@@ -30,7 +30,36 @@ const Portfolio = () => {
       image: 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png',
       repoLink: 'https://github.com/J0263/React-Portfolio-Final.git',
     },
-    // Add more project data here
+    {
+      title: 'Project 2',
+      image: 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png',
+      repoLink: 'https://github.com/J0263/React-Portfolio-Final.git',
+      // Add more project data here
+    },
+    {
+      title: 'Project 3',
+      image: 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png',
+      repoLink: 'https://github.com/J0263/React-Portfolio-Final.git',
+      // Add more project data here
+    },
+    {
+      title: 'Project 4',
+      image: 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png',
+      repoLink: 'https://github.com/J0263/React-Portfolio-Final.git',
+      // Add more project data here
+    },
+    {
+      title: 'Project 5',
+      image: 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png',
+      repoLink: 'https://github.com/J0263/React-Portfolio-Final.git',
+      // Add more project data here
+    },
+    {
+      title: 'Project 6',
+      image: 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png',
+      repoLink: 'https://github.com/J0263/React-Portfolio-Final.git',
+      // Add more project data here
+    },
   ];
 
   return (

@@ -35,7 +35,7 @@ const About = () => {
       <h2 style={headingStyles}>About Me</h2>
       <img src="https://media.licdn.com/dms/image/v2/D4E03AQHm5utRtt51iA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696876387219?e=1735776000&v=beta&t=2dAYV3Cm8cgLbhbesiHfD-B-E0zlSvqj4I_stv5s5Oo" alt="Jorge Bush" style={imageStyles} />
       <p style={paragraphStyles}>
-        Brief bio text goes here, adding some description of who you are, your skills, and your interests.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus corporis tempore, nisi, omnis veniam harum eveniet est quasi fugiat numquam laborum, debitis eum iure alias accusamus optio! Unde, dolor dicta?
       </p>
     </section>
   );
